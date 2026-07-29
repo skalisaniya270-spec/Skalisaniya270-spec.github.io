@@ -18,6 +18,63 @@ position:sticky;
 top:0;
 z-index:100;
 }
+/* Hero / Top Banner Section */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    /* Sets your image as the background */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)), /* Dark gradient overlay for text readability */
+        url('hero-bg.jpg'); /* Change to your exact image file name/path */
+    
+    background-size: cover;
+    background-position: center top; /* Focuses on the hands/mehndi at top */
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 100px 20px;
+}
+
+/* Hero Content Box */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Call to Action Button */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8b4513; /* Elegant brown/maroon tint */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #a0522d;
+    transform: translateY(-2px);
+}
 
 nav{
 display:flex;
